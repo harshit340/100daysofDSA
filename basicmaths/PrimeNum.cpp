@@ -20,25 +20,23 @@ bool isPrime(int n)
 
 // sieve of eratosthenes 
 
+//Mark all the numbers as prime numbers except 1
+//Traverse over each prime numbers smaller than sqrt(N)
+//For each prime number, mark its multiples as composite numbers
+//Numbers, which are not the multiples of any number, will remain marked as prime number and others will change to composite numbers.
 
-bool isPrime(int n)
-{
-     bool isitprime[n+1];
 
-	 for(int i=0;i<n;i++)
-	 {
-		 isitprime[i]=true;
-	 }
-
-	 isitprime[0]=false;
-	 isitprime[1]=false;
-     
-	 for(int i=2;i*i<n;i++){
-		 if(isitprime[i]==true){
-			 for(int j=i*i;j<n;j+=i){
-				 isitprime[j]=false;
-			 }
-		 }
-	 }
-
-}
+void sieve(int N) {
+        bool isPrime[N+1];
+        for(int i = 0; i <= N;++i) {
+            isPrime[i] = true;
+        }
+        isPrime[0] = false;
+        isPrime[1] = false;
+        for(int i = 2; i * i <= N; ++i) {
+             if(isPrime[i] == true) {                    //Mark all the multiples of i as composite numbers
+                 for(int j = i * i; j <= N ;j += i)
+                     isPrime[j] = false;
+            }
+        }
+    }
