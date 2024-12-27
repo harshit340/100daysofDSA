@@ -1,0 +1,1 @@
+{"name":"Local: Paintingribbon","url":"h:\\100daysofDSA\\codeforces\\Paintingribbon.cpp","tests":[{"id":1721587083456,"input":"5\n1 1 1\n5 1 1\n5 2 1\n5 2 2\n5 5 3\n","output":"NO\nNO\nYES\nNO\nYES\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\100daysofDSA\\codeforces\\Paintingribbon.cpp","group":"local","local":true}

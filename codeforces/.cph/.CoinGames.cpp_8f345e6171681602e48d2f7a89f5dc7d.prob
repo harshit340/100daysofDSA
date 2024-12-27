@@ -1,0 +1,1 @@
+{"name":"Local: CoinGames","url":"h:\\100daysofDSA\\codeforces\\CoinGames.cpp","tests":[{"id":1722097957722,"input":"3\n5\nUUDUD\n5\nUDDUD\n2\nUU\n","output":"YES\nNO\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\100daysofDSA\\codeforces\\CoinGames.cpp","group":"local","local":true}
